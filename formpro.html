@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form 2026</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+
+            /* Full Background Image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Colorful Box Model Form Container */
+        .container {
+            width: 70%;
+            background: rgba(255, 255, 255, 0.90); 
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+
+            /* MULTI-COLOR BORDER (Box Model) */
+            border: 6px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        /* Multi-color Border Outer Layer */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #ff0055, #ff9900, #00bbff, #7b00ff);
+            z-index: -1;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        hr {
+            border: 0.5px solid #ddd;
+            margin: 20px 0;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #333;
+        }
+    </style>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("🎉 Your Admission Form for 2026 is Successfully Submitted!");
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2> The American College – Admission Form 2026</h2>
+    <hr>
+
+    <form onsubmit="submitForm(event)">
+        <h3>Personal Information</h3>
+
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel" required>
+
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+
+        <h3>Education Details</h3>
+
+        <label>High School</label>
+        <input type="text" required>
+
+        <label>Year of Passing</label>
+        <input type="number" placeholder="2026" required>
+
+        <label>GPA / Percentage</label>
+        <input type="text" required>
+
+        <h3>Course Preference</h3>
+
+        <label>Select Major</label>
+        <select required>
+            <option>Select Major</option>
+            <option>Computer Science</option>
+            <option>Business</option>
+            <option>Engineering</option>
+            <option>Biology</option>
+            <option>Psychology</option>
+            <option>Information</option>
+            <option>Data Science</option>
+        </select>
+
+        <label>Upload Documents (PDF)</label>
+        <input type="file" accept="application/pdf">
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
